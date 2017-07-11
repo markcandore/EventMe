@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jo9-xh-MQf">
-                                <rect key="frame" x="0.0" y="70.5" width="320" height="387"/>
+                                <rect key="frame" x="0.5" y="70.5" width="320" height="387"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="v9W-Nt-NBs" userLabel="NameStackView">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
@@ -45,13 +46,16 @@
                                         <rect key="frame" x="0.0" y="50" width="320" height="236.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time &amp; Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeW-8V-gjU">
-                                                <rect key="frame" x="110.5" y="0.0" width="99.5" height="20.5"/>
+                                                <rect key="frame" x="110" y="0.0" width="99.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="dzZ-lV-VMR">
                                                 <rect key="frame" x="0.0" y="20.5" width="320" height="216"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="dzZ-lV-VMR" secondAttribute="height" multiplier="40:27" id="K0k-Vf-gz9"/>
+                                                </constraints>
                                                 <date key="date" timeIntervalSinceReferenceDate="521412182.08717197">
                                                     <!--2017-07-10 20:43:02 +0000-->
                                                 </date>

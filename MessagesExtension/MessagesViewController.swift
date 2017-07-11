@@ -27,6 +27,10 @@ class MessagesViewController: MSMessagesAppViewController {
 //        }
 //        // Do any additional setup after loading the view.
         
+        formatDatePicker()
+    }
+    func formatDatePicker() {
+        datetime.frame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height)
     }
     @IBAction func didTapCreateButton(_ sender: UIButton) {
         let name = nameTextField.text
@@ -91,6 +95,7 @@ class MessagesViewController: MSMessagesAppViewController {
         Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) {_ in 
             self.requestPresentationStyle(.expanded)
         }
+        formatDatePicker()
         // Use this method to configure the extension and restore previously stored state.
     }
     
@@ -129,7 +134,9 @@ class MessagesViewController: MSMessagesAppViewController {
     
     override func didTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
         // Called after the extension transitions to a new presentation style.
-    
+//        if self.presentationStyle == .compact {
+//            self.requestPresentationStyle(.expanded)
+//        }
         // Use this method to finalize any behaviors associated with the change in presentation style.
     }
 
