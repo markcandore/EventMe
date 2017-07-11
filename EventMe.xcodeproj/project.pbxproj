@@ -13,6 +13,9 @@
 		5F04818E1F141D3300E8B3E4 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F04818D1F141D3300E8B3E4 /* MessagesViewController.swift */; };
 		5F0481911F141D3300E8B3E4 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F04818F1F141D3300E8B3E4 /* MainInterface.storyboard */; };
 		5F0481931F141D3300E8B3E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F0481921F141D3300E8B3E4 /* Assets.xcassets */; };
+		5FC5846C1F143BA2003398E7 /* eventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC5846B1F143BA2003398E7 /* eventModel.swift */; };
+		5FC5846E1F143D7D003398E7 /* EventMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC5846D1F143D7D003398E7 /* EventMessage.swift */; };
+		5FC584721F14436B003398E7 /* party.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FC584711F14436B003398E7 /* party.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		5F0481901F141D3300E8B3E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		5F0481921F141D3300E8B3E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F0481941F141D3300E8B3E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FC5846B1F143BA2003398E7 /* eventModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eventModel.swift; sourceTree = "<group>"; };
+		5FC5846D1F143D7D003398E7 /* EventMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMessage.swift; sourceTree = "<group>"; };
+		5FC584711F14436B003398E7 /* party.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = party.jpg; path = Assets.xcassets/party.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				5F04817E1F141D3300E8B3E4 /* Assets.xcassets */,
+				5FC584711F14436B003398E7 /* party.jpg */,
 				5F0481801F141D3300E8B3E4 /* Info.plist */,
 			);
 			path = EventMe;
@@ -106,6 +113,8 @@
 				5F04818F1F141D3300E8B3E4 /* MainInterface.storyboard */,
 				5F0481921F141D3300E8B3E4 /* Assets.xcassets */,
 				5F0481941F141D3300E8B3E4 /* Info.plist */,
+				5FC5846B1F143BA2003398E7 /* eventModel.swift */,
+				5FC5846D1F143D7D003398E7 /* EventMessage.swift */,
 			);
 			path = MessagesExtension;
 			sourceTree = "<group>";
@@ -193,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FC584721F14436B003398E7 /* party.jpg in Resources */,
 				5F04817F1F141D3300E8B3E4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +223,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FC5846C1F143BA2003398E7 /* eventModel.swift in Sources */,
 				5F04818E1F141D3300E8B3E4 /* MessagesViewController.swift in Sources */,
+				5FC5846E1F143D7D003398E7 /* EventMessage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +381,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MMWEE7C9T8;
 				INFOPLIST_FILE = EventMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nathanmark.EventMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -382,6 +395,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MMWEE7C9T8;
 				INFOPLIST_FILE = EventMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nathanmark.EventMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -407,6 +421,7 @@
 				5F0481991F141D3300E8B3E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F04819B1F141D3300E8B3E4 /* Build configuration list for PBXNativeTarget "EventMe" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +430,7 @@
 				5F04819D1F141D3300E8B3E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

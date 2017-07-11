@@ -5,16 +5,77 @@
 //  Created by Mark Wang on 7/10/17.
 //  Copyright © 2017 Nathan and Mark. All rights reserved.
 //
-
+import Foundation
 import UIKit
 import Messages
 
 class MessagesViewController: MSMessagesAppViewController {
     
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var datetime: UIDatePicker!
+    
+    @IBOutlet weak var createButton: UIButton!
+    @IBOutlet weak var locationTextField: UITextField!
+    
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+//        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) {_ in
+//            self.requestPresentationStyle(.expanded)
+//        }
+//        // Do any additional setup after loading the view.
+        
     }
+    @IBAction func didTapCreateButton(_ sender: UIButton) {
+        let name = nameTextField.text
+        let date = datetime.date
+        let location = locationTextField.text
+        
+        let event = Event(name: name, date: date, location: location)
+        
+        let layout = MSMessageTemplateLayout()
+
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        dateFormatter.dateFormat = "E, MMM d"
+        dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
+        
+
+        let timeFormatter = DateFormatter()
+        timeFormatter.locale = Locale(identifier: "en_US_POSIX")
+        timeFormatter.dateFormat = "h:mm a"
+        timeFormatter.timeZone = TimeZone(secondsFromGMT: 0)
+        layout.caption = event.name!
+        layout.subcaption = dateFormatter.string(from: event.time!)
+        layout.trailingCaption = event.location!
+        layout.trailingSubcaption = timeFormatter.string(from: event.time!)
+        
+        
+        //print(dateFormatter.string(from: event.time!))
+
+        //layout.trailingCaption = event.time?.description
+        //layout.trailingCaption = String(describing: event.time?.description!)
+        
+        
+        let conversation = activeConversation
+        
+        let message = MSMessage()
+        message.layout = layout
+        
+        conversation?.insert(message, completionHandler: nil)
+        self.requestPresentationStyle(.compact)
+    }
+
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        Timer.scheduledTimer(withTimeInterval: 0.1, repeats: false) { _ in
+//            self.requestPresentationStyle(.expanded)
+//        }
+//        
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -26,7 +87,10 @@ class MessagesViewController: MSMessagesAppViewController {
     override func willBecomeActive(with conversation: MSConversation) {
         // Called when the extension is about to move from the inactive to active state.
         // This will happen when the extension is about to present UI.
-        
+        super.willBecomeActive(with: conversation)
+        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) {_ in 
+            self.requestPresentationStyle(.expanded)
+        }
         // Use this method to configure the extension and restore previously stored state.
     }
     
