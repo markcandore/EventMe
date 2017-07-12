@@ -18,19 +18,19 @@ class MessagesViewController: MSMessagesAppViewController {
     @IBOutlet weak var createButton: UIButton!
     @IBOutlet weak var locationTextField: UITextField!
     
-    
+    @IBOutlet weak var contentView: UIView!
+    var isUp = false
+    @IBOutlet weak var ScrollView: UIScrollView!
+    var scrollViewInsets = UIEdgeInsets.zero
     override func viewDidLoad() {
         
         super.viewDidLoad()
-//        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) {_ in
-//            self.requestPresentationStyle(.expanded)
-//        }
-//        // Do any additional setup after loading the view.
         
-        formatDatePicker()
     }
-    func formatDatePicker() {
-        datetime.frame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height)
+    override func viewDidLayoutSubviews() {
+        let scrollViewBound = ScrollView.bounds
+        let contentViewBound = contentView.bounds
+    
     }
     @IBAction func didTapCreateButton(_ sender: UIButton) {
         let name = nameTextField.text
@@ -91,11 +91,8 @@ class MessagesViewController: MSMessagesAppViewController {
     override func willBecomeActive(with conversation: MSConversation) {
         // Called when the extension is about to move from the inactive to active state.
         // This will happen when the extension is about to present UI.
-        super.willBecomeActive(with: conversation)
-        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) {_ in 
-            self.requestPresentationStyle(.expanded)
-        }
-        formatDatePicker()
+        
+       
         // Use this method to configure the extension and restore previously stored state.
     }
     
@@ -140,4 +137,27 @@ class MessagesViewController: MSMessagesAppViewController {
         // Use this method to finalize any behaviors associated with the change in presentation style.
     }
 
+}
+extension MessagesViewController: UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        if textField.tag == 1 {
+            let scrollViewBound = ScrollView.bounds
+            scrollViewInsets.top = scrollViewBound.size.height/2
+            scrollViewInsets.bottom = scrollViewInsets.top
+            scrollViewInsets.bottom += 1
+            ScrollView.contentInset = scrollViewInsets
+            ScrollView.scrollRectToVisible(CGRect(x: 0, y: 1500, width: 1, height: 1), animated: true)
+        }
+    }
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
+        if textField.tag == 1 {
+            ScrollView.scrollRectToVisible(CGRect(x: 0, y: -90, width: 1, height: 1), animated: true)
+            let scrollViewBound = ScrollView.bounds
+            scrollViewInsets.top = scrollViewBound.size.height * 2
+            scrollViewInsets.bottom = scrollViewInsets.top
+            scrollViewInsets.bottom -= 1
+            ScrollView.contentInset = scrollViewInsets
+
+        }
+    }
 }

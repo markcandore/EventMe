@@ -111,10 +111,10 @@
 			children = (
 				5F04818D1F141D3300E8B3E4 /* MessagesViewController.swift */,
 				5F04818F1F141D3300E8B3E4 /* MainInterface.storyboard */,
-				5F0481921F141D3300E8B3E4 /* Assets.xcassets */,
 				5F0481941F141D3300E8B3E4 /* Info.plist */,
 				5FC5846B1F143BA2003398E7 /* eventModel.swift */,
 				5FC5846D1F143D7D003398E7 /* EventMessage.swift */,
+				5F0481921F141D3300E8B3E4 /* Assets.xcassets */,
 			);
 			path = MessagesExtension;
 			sourceTree = "<group>";
