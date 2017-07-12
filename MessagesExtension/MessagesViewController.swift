@@ -53,9 +53,7 @@ class MessagesViewController: MSMessagesAppViewController {
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField.tag == 4 {
-            if let nextField = textField.superview?.viewWithTag(3) as? EmojiTextField {
-                nextField.becomeFirstResponder()
-            }
+            emojiTextField.becomeFirstResponder()
         } else {
             dismissKeyboard()
         }
@@ -70,17 +68,19 @@ class MessagesViewController: MSMessagesAppViewController {
         let event = Event(name: name, date: date, location: location, emojiString: emoji)
         
         
+        let dateFormatter = DateFormatter()
 
+        dateFormatter.dateFormat = "h:mm a"
         
 
         let timeFormatter = DateFormatter()
-        timeFormatter.locale = Locale(identifier: "en_US_POSIX")
-        timeFormatter.dateFormat = "E, MMM d h:mm a"
+        timeFormatter.dateFormat = "E, MMM d"
         timeFormatter.timeZone = TimeZone(secondsFromGMT: 0)
         let layout = MSMessageTemplateLayout()
         layout.image = event.image
         layout.imageTitle = event.name!
         layout.caption = timeFormatter.string(from: event.time!)
+        layout.subcaption = dateFormatter.string(from: event.time!)
         layout.imageSubtitle = event.location!
         
         
@@ -185,7 +185,7 @@ extension MessagesViewController: UITextFieldDelegate {
                 self.ScrollView.isScrollEnabled = false
             }
         case 3:
-            ScrollView.setContentOffset(CGPoint(x: 0, y: 110), animated: true)
+            ScrollView.setContentOffset(CGPoint(x: 0, y: 130), animated: true)
             Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in
                 self.ScrollView.isScrollEnabled = false
             }
@@ -201,5 +201,20 @@ extension MessagesViewController: UITextFieldDelegate {
                 self.ScrollView.isScrollEnabled = false
             }
         }
+    }
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+//        if string == "" {
+//            return true
+//        }
+//        if textField.tag == 3 && (textField.text?.characters.count)! >= 1 {
+//            return false
+//        } else if textField.tag == 3 && string.characters.count <= 2{
+//            return true
+//        }
+        if textField.tag == 3 && string.characters.count <= 3{
+            textField.text = string
+            return false
+        }
+        return true
     }
 }
