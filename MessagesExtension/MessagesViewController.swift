@@ -23,6 +23,13 @@ class MessagesViewController: MSMessagesAppViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in
+            self.requestPresentationStyle(.expanded)
+            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) {_ in
+                self.ScrollView.setContentOffset(CGPoint(x: 0, y: 90), animated: false)
+                self.ScrollView.setContentOffset(CGPoint(x: 0, y: -100), animated: false)
+            }
+        }
         nameTextField.returnKeyType = .next
         locationTextField.returnKeyType = .done
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
@@ -149,6 +156,7 @@ class MessagesViewController: MSMessagesAppViewController {
     override func didTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
         // Called after the extension transitions to a new presentation style.
         if presentationStyle == .expanded {
+            chooseTimeButton.alpha = 0
             Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in 
                 self.ScrollView.isScrollEnabled = false
             }
@@ -162,7 +170,7 @@ extension MessagesViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if textField.tag == 4 {
             ScrollView.isScrollEnabled = true
-            ScrollView.scrollRectToVisible(CGRect(x: 0, y: 90, width: 1, height: 1), animated: true)
+            ScrollView.setContentOffset(CGPoint(x: 0, y: 90), animated: true)
             Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in 
                  self.ScrollView.isScrollEnabled = false
             }
@@ -172,9 +180,8 @@ extension MessagesViewController: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
         if textField.tag == 4 {
             ScrollView.isScrollEnabled = true
-            ScrollView.scrollRectToVisible(CGRect(x: 0, y: 150, width: 1, height: 1), animated: true)
-            ScrollView.isScrollEnabled = false
-            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in
+            ScrollView.setContentOffset(CGPoint(x: 0, y: -100), animated: true)
+            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) {_ in 
                 self.ScrollView.isScrollEnabled = false
             }
         }
