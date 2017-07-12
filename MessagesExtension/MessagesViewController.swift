@@ -12,25 +12,42 @@ import Messages
 class MessagesViewController: MSMessagesAppViewController {
     
     
+    @IBOutlet weak var chooseTimeButton: UIButton!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var datetime: UIDatePicker!
-    
     @IBOutlet weak var createButton: UIButton!
     @IBOutlet weak var locationTextField: UITextField!
-    
     @IBOutlet weak var contentView: UIView!
-    var isUp = false
     @IBOutlet weak var ScrollView: UIScrollView!
     var scrollViewInsets = UIEdgeInsets.zero
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
+        nameTextField.returnKeyType = .next
+        locationTextField.returnKeyType = .done
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        self.nameTextField.delegate = self
+        self.locationTextField.delegate = self
     }
     override func viewDidLayoutSubviews() {
         let scrollViewBound = ScrollView.bounds
         let contentViewBound = contentView.bounds
-    
+        scrollViewInsets.top = scrollViewBound.size.height/2
+        scrollViewInsets.bottom = scrollViewInsets.top
+        scrollViewInsets.bottom += 1
+        ScrollView.contentInset = scrollViewInsets
+    }
+    func dismissKeyboard() {
+        self.view.endEditing(true)
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        dismissKeyboard()
+        return false
+    }
+    @IBAction func didTapChooseTime(_ sender: UIButton) {
+        requestPresentationStyle(.expanded)
+        sender.alpha = 0
     }
     @IBAction func didTapCreateButton(_ sender: UIButton) {
         let name = nameTextField.text
@@ -131,33 +148,35 @@ class MessagesViewController: MSMessagesAppViewController {
     
     override func didTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
         // Called after the extension transitions to a new presentation style.
-//        if self.presentationStyle == .compact {
-//            self.requestPresentationStyle(.expanded)
-//        }
+        if presentationStyle == .expanded {
+            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in 
+                self.ScrollView.isScrollEnabled = false
+            }
+            
+        }
         // Use this method to finalize any behaviors associated with the change in presentation style.
     }
 
 }
 extension MessagesViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        if textField.tag == 1 {
-            let scrollViewBound = ScrollView.bounds
-            scrollViewInsets.top = scrollViewBound.size.height/2
-            scrollViewInsets.bottom = scrollViewInsets.top
-            scrollViewInsets.bottom += 1
-            ScrollView.contentInset = scrollViewInsets
-            ScrollView.scrollRectToVisible(CGRect(x: 0, y: 1500, width: 1, height: 1), animated: true)
+        if textField.tag == 4 {
+            ScrollView.isScrollEnabled = true
+            ScrollView.scrollRectToVisible(CGRect(x: 0, y: 90, width: 1, height: 1), animated: true)
+            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in 
+                 self.ScrollView.isScrollEnabled = false
+            }
+           
         }
     }
     func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
-        if textField.tag == 1 {
-            ScrollView.scrollRectToVisible(CGRect(x: 0, y: -90, width: 1, height: 1), animated: true)
-            let scrollViewBound = ScrollView.bounds
-            scrollViewInsets.top = scrollViewBound.size.height * 2
-            scrollViewInsets.bottom = scrollViewInsets.top
-            scrollViewInsets.bottom -= 1
-            ScrollView.contentInset = scrollViewInsets
-
+        if textField.tag == 4 {
+            ScrollView.isScrollEnabled = true
+            ScrollView.scrollRectToVisible(CGRect(x: 0, y: 150, width: 1, height: 1), animated: true)
+            ScrollView.isScrollEnabled = false
+            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in
+                self.ScrollView.isScrollEnabled = false
+            }
         }
     }
 }
