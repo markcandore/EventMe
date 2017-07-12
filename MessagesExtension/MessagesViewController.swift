@@ -11,14 +11,15 @@ import Messages
 
 class MessagesViewController: MSMessagesAppViewController {
     
-    
-    @IBOutlet weak var chooseTimeButton: UIButton!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var datetime: UIDatePicker!
     @IBOutlet weak var createButton: UIButton!
     @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var ScrollView: UIScrollView!
+    
+    @IBOutlet weak var emojiTextField: EmojiTextField!
+
     var scrollViewInsets = UIEdgeInsets.zero
     override func viewDidLoad() {
         
@@ -31,11 +32,13 @@ class MessagesViewController: MSMessagesAppViewController {
             }
         }
         nameTextField.returnKeyType = .next
-        locationTextField.returnKeyType = .done
+        locationTextField.returnKeyType = .next
+        emojiTextField.returnKeyType = .done
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tap)
         self.nameTextField.delegate = self
         self.locationTextField.delegate = self
+        self.emojiTextField.delegate = self
     }
     override func viewDidLayoutSubviews() {
         let scrollViewBound = ScrollView.bounds
@@ -49,37 +52,36 @@ class MessagesViewController: MSMessagesAppViewController {
         self.view.endEditing(true)
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        dismissKeyboard()
+        if textField.tag == 4 {
+            if let nextField = textField.superview?.viewWithTag(3) as? EmojiTextField {
+                nextField.becomeFirstResponder()
+            }
+        } else {
+            dismissKeyboard()
+        }
         return false
-    }
-    @IBAction func didTapChooseTime(_ sender: UIButton) {
-        requestPresentationStyle(.expanded)
-        sender.alpha = 0
     }
     @IBAction func didTapCreateButton(_ sender: UIButton) {
         let name = nameTextField.text
         let date = datetime.date
         let location = locationTextField.text
+        let emoji = emojiTextField.text
         
-        let event = Event(name: name, date: date, location: location)
+        let event = Event(name: name, date: date, location: location, emojiString: emoji)
         
-        let layout = MSMessageTemplateLayout()
+        
 
-        
-        let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
-        dateFormatter.dateFormat = "E, MMM d"
-        dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
         
 
         let timeFormatter = DateFormatter()
         timeFormatter.locale = Locale(identifier: "en_US_POSIX")
-        timeFormatter.dateFormat = "h:mm a"
+        timeFormatter.dateFormat = "E, MMM d h:mm a"
         timeFormatter.timeZone = TimeZone(secondsFromGMT: 0)
-        layout.caption = event.name!
-        layout.subcaption = dateFormatter.string(from: event.time!)
-        layout.trailingCaption = event.location!
-        layout.trailingSubcaption = timeFormatter.string(from: event.time!)
+        let layout = MSMessageTemplateLayout()
+        layout.image = event.image
+        layout.imageTitle = event.name!
+        layout.caption = timeFormatter.string(from: event.time!)
+        layout.imageSubtitle = event.location!
         
         
         //print(dateFormatter.string(from: event.time!))
@@ -156,7 +158,6 @@ class MessagesViewController: MSMessagesAppViewController {
     override func didTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
         // Called after the extension transitions to a new presentation style.
         if presentationStyle == .expanded {
-            chooseTimeButton.alpha = 0
             Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in 
                 self.ScrollView.isScrollEnabled = false
             }
@@ -168,17 +169,32 @@ class MessagesViewController: MSMessagesAppViewController {
 }
 extension MessagesViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        if textField.tag == 4 {
-            ScrollView.isScrollEnabled = true
+//        if textField.tag == 4 {
+//            ScrollView.isScrollEnabled = true
+//            ScrollView.setContentOffset(CGPoint(x: 0, y: 90), animated: true)
+//            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in 
+//                 self.ScrollView.isScrollEnabled = false
+//            }
+//           
+//        }
+        ScrollView.isScrollEnabled = true
+        switch textField.tag {
+        case 4:
             ScrollView.setContentOffset(CGPoint(x: 0, y: 90), animated: true)
-            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in 
-                 self.ScrollView.isScrollEnabled = false
+            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in
+                self.ScrollView.isScrollEnabled = false
             }
-           
+        case 3:
+            ScrollView.setContentOffset(CGPoint(x: 0, y: 110), animated: true)
+            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in
+                self.ScrollView.isScrollEnabled = false
+            }
+        default:
+            self.ScrollView.isScrollEnabled = false
         }
     }
     func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
-        if textField.tag == 4 {
+        if textField.tag == 4 || textField.tag == 3 {
             ScrollView.isScrollEnabled = true
             ScrollView.setContentOffset(CGPoint(x: 0, y: -100), animated: true)
             Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) {_ in 

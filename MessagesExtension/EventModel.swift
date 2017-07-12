@@ -7,15 +7,33 @@
 //
 
 import Foundation
+import UIKit
 
 class Event {
     var name : String?
     var time : Date?
     var location : String?
+    var image: UIImage?
     
-    init(name: String?, date: Date, location: String?){
+    init(name: String?, date: Date, location: String?, emojiString: String?) {
         self.name = name
         self.time = date
         self.location = location
+        if let emoji = emojiString {
+            self.image = emoji.image()
+        }
+    }
+}
+extension String {
+    func image() -> UIImage {
+        let size = CGSize(width: 30, height: 35)
+        UIGraphicsBeginImageContextWithOptions(size, false, 0);
+        UIColor.black.set()
+        let rect = CGRect(origin: CGPoint.zero, size: size)
+        UIRectFill(CGRect(origin: CGPoint.zero, size: size))
+        (self as NSString).draw(in: rect, withAttributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 30)])
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image!
     }
 }

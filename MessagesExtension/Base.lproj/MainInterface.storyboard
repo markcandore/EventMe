@@ -26,10 +26,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Od4-4c-U1S">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="457"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="457.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="jo9-xh-MQf">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="457"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="457.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="v9W-Nt-NBs" userLabel="NameStackView">
                                                         <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
@@ -71,15 +71,8 @@
                                                             </datePicker>
                                                         </subviews>
                                                     </stackView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuc-ww-f7E">
-                                                        <rect key="frame" x="0.0" y="316.5" width="320" height="30"/>
-                                                        <state key="normal" title="Choose Time!"/>
-                                                        <connections>
-                                                            <action selector="didTapChooseTime:" destination="ObA-dk-sSI" eventType="touchUpInside" id="SZR-nz-Zgi"/>
-                                                        </connections>
-                                                    </button>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="W0Q-pA-ryp" userLabel="LocationStackView">
-                                                        <rect key="frame" x="0.0" y="371.5" width="320" height="30.5"/>
+                                                        <rect key="frame" x="0.0" y="316.5" width="320" height="30.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRA-6s-mrw">
                                                                 <rect key="frame" x="0.0" y="5" width="70.5" height="20.5"/>
@@ -98,8 +91,28 @@
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="FOo-mY-Di5" userLabel="Emoji Stack View">
+                                                        <rect key="frame" x="0.0" y="372" width="320" height="30.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Emojis:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kcc-vd-N1w">
+                                                                <rect key="frame" x="0.0" y="5" width="102" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EV6-AL-LjH" userLabel="Emoji Text Field" customClass="EmojiTextField" customModule="MessagesExtension" customModuleProvider="target">
+                                                                <rect key="frame" x="107" y="0.0" width="213" height="30.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="30" id="nJW-3x-ZH4"/>
+                                                                </constraints>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8x9-AJ-UsE">
-                                                        <rect key="frame" x="0.0" y="427" width="320" height="30"/>
+                                                        <rect key="frame" x="0.0" y="427.5" width="320" height="30"/>
                                                         <color key="backgroundColor" red="0.21960784310000001" green="0.59215686270000001" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                                         <state key="normal" title="Create">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -115,8 +128,8 @@
                                                     <constraint firstItem="W0Q-pA-ryp" firstAttribute="centerX" secondItem="jo9-xh-MQf" secondAttribute="centerX" id="Ego-Se-6er"/>
                                                     <constraint firstItem="JrN-8Q-mhK" firstAttribute="centerX" secondItem="jo9-xh-MQf" secondAttribute="centerX" id="OJM-nc-gVc"/>
                                                     <constraint firstItem="W0Q-pA-ryp" firstAttribute="width" secondItem="v9W-Nt-NBs" secondAttribute="width" id="XkI-mY-035"/>
-                                                    <constraint firstItem="zuc-ww-f7E" firstAttribute="centerX" secondItem="jo9-xh-MQf" secondAttribute="centerX" id="Y5d-uZ-3k6"/>
                                                     <constraint firstItem="8x9-AJ-UsE" firstAttribute="width" secondItem="v9W-Nt-NBs" secondAttribute="width" id="oac-G5-Dbr"/>
+                                                    <constraint firstItem="FOo-mY-Di5" firstAttribute="width" secondItem="W0Q-pA-ryp" secondAttribute="width" id="rDR-YR-3Px"/>
                                                 </constraints>
                                             </stackView>
                                         </subviews>
@@ -152,10 +165,10 @@
                     <size key="freeformSize" width="320" height="528"/>
                     <connections>
                         <outlet property="ScrollView" destination="QRX-1w-RYM" id="WUl-dX-MCg"/>
-                        <outlet property="chooseTimeButton" destination="zuc-ww-f7E" id="Sq3-Nd-dOd"/>
                         <outlet property="contentView" destination="Od4-4c-U1S" id="fML-M2-9SC"/>
                         <outlet property="createButton" destination="8x9-AJ-UsE" id="Qck-bc-fll"/>
                         <outlet property="datetime" destination="dzZ-lV-VMR" id="UHV-Vf-aAi"/>
+                        <outlet property="emojiTextField" destination="EV6-AL-LjH" id="Xgt-XB-3OD"/>
                         <outlet property="locationTextField" destination="2hp-MY-mor" id="hLd-8h-xei"/>
                         <outlet property="nameTextField" destination="4KD-gX-PAR" id="0jk-vW-wc4"/>
                     </connections>
