@@ -10,7 +10,7 @@ import UIKit
 import Messages
 
 class EventPageViewController: UIViewController {
-
+    var event: Event!
     override func viewDidLoad() {
         super.viewDidLoad()
         

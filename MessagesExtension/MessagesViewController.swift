@@ -61,26 +61,28 @@ class MessagesViewController: MSMessagesAppViewController {
     }
     @IBAction func didTapCreateButton(_ sender: UIButton) {
         let name = nameTextField.text
-        let date = datetime.date
+        let datePickerValue = datetime.date
         let location = locationTextField.text
         let emoji = emojiTextField.text
         
-        let event = Event(name: name, date: date, location: location, emojiString: emoji)
-        
-        
         let dateFormatter = DateFormatter()
-
-        dateFormatter.dateFormat = "h:mm a"
-        
+        dateFormatter.dateFormat = "E, MMM d"
+        let date = dateFormatter.string(from: datePickerValue)
 
         let timeFormatter = DateFormatter()
-        timeFormatter.dateFormat = "E, MMM d"
-        timeFormatter.timeZone = TimeZone(secondsFromGMT: 0)
+        timeFormatter.dateFormat = "h:mm a"
+        let time = dateFormatter.string(from: datePickerValue)
+        
+        let event = Event(name: name, date: date, time: time, location: location, emojiString: emoji)
+        
+        
+
+        
         let layout = MSMessageTemplateLayout()
         layout.image = event.image
         layout.imageTitle = event.name!
-        layout.caption = timeFormatter.string(from: event.time!)
-        layout.subcaption = dateFormatter.string(from: event.time!)
+        layout.caption = event.time
+        layout.subcaption = event.date
         layout.imageSubtitle = event.location!
         
         
@@ -100,8 +102,8 @@ class MessagesViewController: MSMessagesAppViewController {
     }
     override func didSelect(_ message: MSMessage, conversation: MSConversation) {
         let storyboard = UIStoryboard(name: "MainInterface", bundle: .main)
-        let eventPage = storyboard.instantiateViewController(withIdentifier: "eventPage")
-//        self.addChildViewController(eventPage)
+        let eventPage = storyboard.instantiateViewController(withIdentifier: "eventPage") as! EventPageViewController
+        eventPage.event = Event(message: message)
         present(eventPage, animated: false, completion: nil)
     }
 
