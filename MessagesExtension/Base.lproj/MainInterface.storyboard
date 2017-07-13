@@ -326,6 +326,12 @@
                             <constraint firstItem="xL9-7z-kD6" firstAttribute="top" secondItem="As6-xA-npi" secondAttribute="top" id="maZ-Zq-WIg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="eventEmoji" destination="0Ax-RL-Lfn" id="ciy-2x-IME"/>
+                        <outlet property="eventLocationLabel" destination="AMI-y6-BQc" id="4R2-8l-rNX"/>
+                        <outlet property="eventNameLabel" destination="Sjj-tO-Ar7" id="fxc-yI-D9f"/>
+                        <outlet property="eventTimeLabel" destination="2DL-GS-jbf" id="KPe-r2-PI7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Io-xN-hTX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

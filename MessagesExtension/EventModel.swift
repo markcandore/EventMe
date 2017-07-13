@@ -16,7 +16,7 @@ class Event {
     var location : String?
     var image: UIImage?
     
-    init(name: String?, date: String, time: String, location: String?, emojiString: String?) {
+    init(name: String?, date: String, time: String, location: String?, emojiString: String?, layout: MSMessageTemplateLayout) {
         self.name = name
         self.date = date
         self.time = time
@@ -24,6 +24,7 @@ class Event {
         if let emoji = emojiString {
             self.image = emoji.image()
         }
+        self.layout = layout
     }
     init(message: MSMessage) {
         if let layout = message.layout as? MSMessageTemplateLayout{

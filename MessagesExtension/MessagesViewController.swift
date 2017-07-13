@@ -24,6 +24,9 @@ class MessagesViewController: MSMessagesAppViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+
+    }
+    func layoutCreateController() {
         Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in
             self.requestPresentationStyle(.expanded)
             Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) {_ in
@@ -39,6 +42,12 @@ class MessagesViewController: MSMessagesAppViewController {
         self.nameTextField.delegate = self
         self.locationTextField.delegate = self
         self.emojiTextField.delegate = self
+    }
+    func layoutEventPageController(message: MSMessage){
+        let storyboard = UIStoryboard(name: "MainInterface", bundle: .main)
+        let eventPage = storyboard.instantiateViewController(withIdentifier: "eventPage") as? EventPageViewController
+        eventPage?.event = Event(message: message)
+        present(eventPage!, animated: false, completion: nil)
     }
     override func viewDidLayoutSubviews() {
         let scrollViewBound = ScrollView.bounds
@@ -71,7 +80,7 @@ class MessagesViewController: MSMessagesAppViewController {
 
         let timeFormatter = DateFormatter()
         timeFormatter.dateFormat = "h:mm a"
-        let time = dateFormatter.string(from: datePickerValue)
+        let time = timeFormatter.string(from: datePickerValue)
         
         let event = Event(name: name, date: date, time: time, location: location, emojiString: emoji)
         
@@ -81,8 +90,8 @@ class MessagesViewController: MSMessagesAppViewController {
         let layout = MSMessageTemplateLayout()
         layout.image = event.image
         layout.imageTitle = event.name!
-        layout.caption = event.time
-        layout.subcaption = event.date
+        layout.caption = event.date
+        layout.subcaption = event.time
         layout.imageSubtitle = event.location!
         
         
@@ -101,10 +110,7 @@ class MessagesViewController: MSMessagesAppViewController {
         self.requestPresentationStyle(.compact)
     }
     override func didSelect(_ message: MSMessage, conversation: MSConversation) {
-        let storyboard = UIStoryboard(name: "MainInterface", bundle: .main)
-        let eventPage = storyboard.instantiateViewController(withIdentifier: "eventPage") as! EventPageViewController
-        eventPage.event = Event(message: message)
-        present(eventPage, animated: false, completion: nil)
+        layoutEventPageController(message: message)
     }
 
 //    override func viewDidAppear(_ animated: Bool) {
@@ -125,7 +131,11 @@ class MessagesViewController: MSMessagesAppViewController {
     override func willBecomeActive(with conversation: MSConversation) {
         // Called when the extension is about to move from the inactive to active state.
         // This will happen when the extension is about to present UI.
-        
+        if let message = conversation.selectedMessage {
+            layoutEventPageController(message: message)
+        } else {
+            layoutCreateController()
+        }
        
         // Use this method to configure the extension and restore previously stored state.
     }
