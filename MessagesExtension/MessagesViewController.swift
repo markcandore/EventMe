@@ -75,14 +75,14 @@ class MessagesViewController: MSMessagesAppViewController {
         let emoji = emojiTextField.text
         
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "E,MMMd"
+        dateFormatter.dateFormat = "E, MMM d"
         let date = dateFormatter.string(from: datePickerValue)
 
         let timeFormatter = DateFormatter()
-        timeFormatter.dateFormat = "h:mma"
+        timeFormatter.dateFormat = "h:mm a"
         let time = timeFormatter.string(from: datePickerValue)
         
-        let event = Event(name: name!, date: date, time: time, location: location!, emojiString: emoji!)
+        let event = Event(name: name, date: date, time: time, location: location, emojiString: emoji)
         
         
         let layout = MSMessageTemplateLayout()
@@ -103,12 +103,20 @@ class MessagesViewController: MSMessagesAppViewController {
         let session = conversation?.selectedMessage?.session ?? MSSession()
 //        let totalString = String(emoji!+event.name+event.location+event.time)
 //        
-        let url: URL = URL(string:"\(event.name)")!
- 
+//        let url: URL = URL(string:"\(event.name)")!
+        var components = URLComponents()
+        let nameQuery = URLQueryItem(name: "name", value: event.name)
+        let locationQuery = URLQueryItem(name: "location", value: event.location)
+        let timeQuery = URLQueryItem(name: "time", value: event.time)
+        let dateQuery = URLQueryItem(name: "date", value: event.date)
+        let emojiQuery = URLQueryItem(name: "emoji", value: emoji)
+        
+        components.queryItems = [nameQuery, locationQuery, timeQuery, dateQuery, emojiQuery]
+        
         
         let message = MSMessage(session: session)
         message.layout = layout
-        message.url = url
+        message.url = components.url
         
         
         conversation?.insert(message, completionHandler: nil)

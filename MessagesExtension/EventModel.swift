@@ -23,6 +23,22 @@ class Event {
         self.location = location
         self.image = emojiString.image()
     }
+    
+    init(message: MSMessage){
+        if let url = message.url {
+            self.name = getQueryStringParameter(url: String(url), param: "name")
+            self.location = getQueryStringParameter(url: String(url), param: "location")
+            self.time = getQueryStringParameter(url: String(url), param: "time")
+            self.date = getQueryStringParameter(url: String(url), param: "date")
+            let emoji = getQueryStringParameter(url: String(url), param: "emoji")
+            self.image = emoji.image()
+            
+        }
+    }
+    func getQueryStringParameter(url: String, param: String) -> String? {
+        guard let url = URLComponents(string: url) else { return nil }
+        return url.queryItems?.first(where: { $0.name == param })?.value
+    }
 }
 extension String {
     func image() -> UIImage {
