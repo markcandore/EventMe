@@ -46,8 +46,8 @@ class MessagesViewController: MSMessagesAppViewController {
     func layoutEventPageController(message: MSMessage){
         let storyboard = UIStoryboard(name: "MainInterface", bundle: .main)
         let eventPage = storyboard.instantiateViewController(withIdentifier: "eventPage") as? EventPageViewController
-        eventPage?.event = Event(message: message)
-        present(eventPage!, animated: false, completion: nil)
+//        eventPage?.event = Event(message: message)
+//        present(eventPage!, animated: false, completion: nil)
     }
     override func viewDidLayoutSubviews() {
         let scrollViewBound = ScrollView.bounds
@@ -75,24 +75,22 @@ class MessagesViewController: MSMessagesAppViewController {
         let emoji = emojiTextField.text
         
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "E, MMM d"
+        dateFormatter.dateFormat = "E,MMMd"
         let date = dateFormatter.string(from: datePickerValue)
 
         let timeFormatter = DateFormatter()
-        timeFormatter.dateFormat = "h:mm a"
+        timeFormatter.dateFormat = "h:mma"
         let time = timeFormatter.string(from: datePickerValue)
         
-        let event = Event(name: name, date: date, time: time, location: location, emojiString: emoji)
+        let event = Event(name: name!, date: date, time: time, location: location!, emojiString: emoji!)
         
-        
-
         
         let layout = MSMessageTemplateLayout()
         layout.image = event.image
-        layout.imageTitle = event.name!
+        layout.imageTitle = event.name
         layout.caption = event.date
         layout.subcaption = event.time
-        layout.imageSubtitle = event.location!
+        layout.imageSubtitle = event.location
         
         
         //print(dateFormatter.string(from: event.time!))
@@ -102,9 +100,16 @@ class MessagesViewController: MSMessagesAppViewController {
         
         
         let conversation = activeConversation
+        let session = conversation?.selectedMessage?.session ?? MSSession()
+//        let totalString = String(emoji!+event.name+event.location+event.time)
+//        
+        let url: URL = URL(string:"\(event.name)")!
+ 
         
-        let message = MSMessage()
+        let message = MSMessage(session: session)
         message.layout = layout
+        message.url = url
+        
         
         conversation?.insert(message, completionHandler: nil)
         self.requestPresentationStyle(.compact)

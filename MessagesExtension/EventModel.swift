@@ -10,30 +10,18 @@ import Foundation
 import UIKit
 import Messages
 class Event {
-    var name : String?
-    var date: String?
-    var time: String?
-    var location : String?
-    var image: UIImage?
+    var name : String
+    var date: String
+    var time: String
+    var location : String
+    var image: UIImage
     
-    init(name: String?, date: String, time: String, location: String?, emojiString: String?, layout: MSMessageTemplateLayout) {
+    init(name: String, date: String, time: String, location: String, emojiString: String) {
         self.name = name
         self.date = date
         self.time = time
         self.location = location
-        if let emoji = emojiString {
-            self.image = emoji.image()
-        }
-        self.layout = layout
-    }
-    init(message: MSMessage) {
-        if let layout = message.layout as? MSMessageTemplateLayout{
-            self.image = layout.image
-            self.name = layout.imageTitle
-            self.location = layout.imageSubtitle
-            self.date = layout.caption
-            self.time = layout.subcaption
-        }
+        self.image = emojiString.image()
     }
 }
 extension String {
