@@ -14,9 +14,9 @@
 		5F0481911F141D3300E8B3E4 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F04818F1F141D3300E8B3E4 /* MainInterface.storyboard */; };
 		5F0481931F141D3300E8B3E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F0481921F141D3300E8B3E4 /* Assets.xcassets */; };
 		5FC5846C1F143BA2003398E7 /* eventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC5846B1F143BA2003398E7 /* eventModel.swift */; };
-		5FC5846E1F143D7D003398E7 /* EventMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC5846D1F143D7D003398E7 /* EventMessage.swift */; };
 		5FC584721F14436B003398E7 /* party.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FC584711F14436B003398E7 /* party.jpg */; };
 		D818F5E61F169F6800375E1F /* EmojiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D818F5E51F169F6800375E1F /* EmojiTextField.swift */; };
+		D8652FB51F16EBB30090D9E6 /* EventPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8652FB41F16EBB30090D9E6 /* EventPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +54,9 @@
 		5F0481921F141D3300E8B3E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F0481941F141D3300E8B3E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FC5846B1F143BA2003398E7 /* eventModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eventModel.swift; sourceTree = "<group>"; };
-		5FC5846D1F143D7D003398E7 /* EventMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMessage.swift; sourceTree = "<group>"; };
 		5FC584711F14436B003398E7 /* party.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = party.jpg; path = Assets.xcassets/party.jpg; sourceTree = "<group>"; };
 		D818F5E51F169F6800375E1F /* EmojiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiTextField.swift; sourceTree = "<group>"; };
+		D8652FB41F16EBB30090D9E6 /* EventPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,15 +111,47 @@
 		5F04818C1F141D3300E8B3E4 /* MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
-				5F04818D1F141D3300E8B3E4 /* MessagesViewController.swift */,
-				5F04818F1F141D3300E8B3E4 /* MainInterface.storyboard */,
+				D8652FB71F16EBD40090D9E6 /* StoryBoards */,
+				D8652FB61F16EBC50090D9E6 /* View Controllers */,
+				D8652FB81F16EBFA0090D9E6 /* Models */,
+				D8652FB91F16EC1A0090D9E6 /* Custom Classes */,
 				5F0481941F141D3300E8B3E4 /* Info.plist */,
-				5FC5846B1F143BA2003398E7 /* eventModel.swift */,
-				5FC5846D1F143D7D003398E7 /* EventMessage.swift */,
 				5F0481921F141D3300E8B3E4 /* Assets.xcassets */,
-				D818F5E51F169F6800375E1F /* EmojiTextField.swift */,
 			);
 			path = MessagesExtension;
+			sourceTree = "<group>";
+		};
+		D8652FB61F16EBC50090D9E6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5F04818D1F141D3300E8B3E4 /* MessagesViewController.swift */,
+				D8652FB41F16EBB30090D9E6 /* EventPageViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D8652FB71F16EBD40090D9E6 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				5F04818F1F141D3300E8B3E4 /* MainInterface.storyboard */,
+			);
+			name = StoryBoards;
+			sourceTree = "<group>";
+		};
+		D8652FB81F16EBFA0090D9E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5FC5846B1F143BA2003398E7 /* eventModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D8652FB91F16EC1A0090D9E6 /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D818F5E51F169F6800375E1F /* EmojiTextField.swift */,
+			);
+			name = "Custom Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +261,7 @@
 				D818F5E61F169F6800375E1F /* EmojiTextField.swift in Sources */,
 				5FC5846C1F143BA2003398E7 /* eventModel.swift in Sources */,
 				5F04818E1F141D3300E8B3E4 /* MessagesViewController.swift in Sources */,
-				5FC5846E1F143D7D003398E7 /* EventMessage.swift in Sources */,
+				D8652FB51F16EBB30090D9E6 /* EventPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

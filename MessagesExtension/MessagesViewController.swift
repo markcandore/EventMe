@@ -98,6 +98,12 @@ class MessagesViewController: MSMessagesAppViewController {
         conversation?.insert(message, completionHandler: nil)
         self.requestPresentationStyle(.compact)
     }
+    override func didSelect(_ message: MSMessage, conversation: MSConversation) {
+        let storyboard = UIStoryboard(name: "MainInterface", bundle: .main)
+        let eventPage = storyboard.instantiateViewController(withIdentifier: "eventPage")
+//        self.addChildViewController(eventPage)
+        present(eventPage, animated: false, completion: nil)
+    }
 
 //    override func viewDidAppear(_ animated: Bool) {
 //        super.viewDidAppear(animated)
@@ -161,12 +167,12 @@ class MessagesViewController: MSMessagesAppViewController {
             Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in 
                 self.ScrollView.isScrollEnabled = false
             }
-            
         }
-        // Use this method to finalize any behaviors associated with the change in presentation style.
     }
-
+        // Use this method to finalize any behaviors associated with the change in presentation style.
 }
+
+
 extension MessagesViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
 //        if textField.tag == 4 {
