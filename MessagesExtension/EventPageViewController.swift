@@ -22,7 +22,7 @@ class EventPageViewController: UIViewController {
         eventNameLabel.text = event?.name
         eventLocationLabel.text = event?.location
         eventEmoji.image = event?.image
-//        eventTimeLabel.text = event.date! + event.time!
+        eventTimeLabel.text = (event?.date!)! + (event?.time!)!
         // Do any additional setup after loading the view.
     }
 
