@@ -49,9 +49,18 @@ class MessagesViewController: MSMessagesAppViewController {
         eventPage?.event = Event(message: message)
         present(eventPage!, animated: false, completion: nil)
     }
+    func layoutMapPicker() {
+        let storyBoard = UIStoryboard(name: "MainInterface", bundle: .main)
+        let locationPicker = storyBoard.instantiateViewController(withIdentifier: "locationViewController") as!LocationViewController
+        locationPicker.completion = {location in
+            let adress = location?.address
+            self.locationTextField.text = adress
+        }
+        present(locationPicker, animated: true, completion: nil)
+    }
     override func viewDidLayoutSubviews() {
         let scrollViewBound = ScrollView.bounds
-        let contentViewBound = contentView.bounds
+        //let contentViewBound = contentView.bounds
         scrollViewInsets.top = scrollViewBound.size.height/2
         scrollViewInsets.bottom = scrollViewInsets.top
         scrollViewInsets.bottom += 1
@@ -69,6 +78,7 @@ class MessagesViewController: MSMessagesAppViewController {
         return false
     }
     @IBAction func didTapCreateButton(_ sender: UIButton) {
+        
         let name = nameTextField.text
         let datePickerValue = datetime.date
         let location = locationTextField.text
@@ -213,10 +223,10 @@ extension MessagesViewController: UITextFieldDelegate {
         ScrollView.isScrollEnabled = true
         switch textField.tag {
         case 4:
-            ScrollView.setContentOffset(CGPoint(x: 0, y: 90), animated: true)
-            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in
-                self.ScrollView.isScrollEnabled = false
-            }
+//            ScrollView.setContentOffset(CGPoint(x: 0, y: 90), animated: true)
+//            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in
+//                self.ScrollView.isScrollEnabled = false
+            layoutMapPicker()
         case 3:
             ScrollView.setContentOffset(CGPoint(x: 0, y: 130), animated: true)
             Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in

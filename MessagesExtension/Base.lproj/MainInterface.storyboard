@@ -336,5 +336,93 @@
             </objects>
             <point key="canvasLocation" x="541.60000000000002" y="-53.523238380809602"/>
         </scene>
+        <!--locationViewController-->
+        <scene sceneID="RBn-E1-OtK">
+            <objects>
+                <viewController storyboardIdentifier="locationViewController" title="locationViewController" id="koO-KZ-BwF" customClass="LocationViewController" customModule="MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rdp-N1-uLu"/>
+                        <viewControllerLayoutGuide type="bottom" id="lnh-yP-3oo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mra-1s-6kP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqH-fg-bmZ">
+                                <rect key="frame" x="164" y="271" width="46" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPS-Pa-tYc">
+                                <rect key="frame" x="164" y="453" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzo-ZN-0K6">
+                                <rect key="frame" x="164" y="137" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VaS-mo-ls4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="H9r-zi-WH3">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" id="BJN-wY-Cny">
+                                            <connections>
+                                                <action selector="buttonTapped:" destination="koO-KZ-BwF" id="OWn-PD-hwh"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QRj-5c-6uB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-114.40000000000001" y="537.48125937031489"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cPa-PN-sMa">
+            <objects>
+                <viewController id="fEO-YB-Iu4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VFZ-GH-hhP"/>
+                        <viewControllerLayoutGuide type="bottom" id="HAo-mp-pyy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wc2-wl-Dup">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nBv-GI-4pn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="fEO-YB-Iu4" id="9zW-SA-aA0"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="5gV-hB-WDa" id="vfl-bR-5ob"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4rc-iL-fK6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="5gV-hB-WDa">
+                    <connections>
+                        <outlet property="delegate" destination="fEO-YB-Iu4" id="nNo-vg-55f"/>
+                        <outlet property="searchBar" destination="nBv-GI-4pn" id="6xP-xe-qHV"/>
+                        <outlet property="searchContentsController" destination="fEO-YB-Iu4" id="Xld-7M-c6L"/>
+                        <outlet property="searchResultsDataSource" destination="fEO-YB-Iu4" id="HPI-hc-gS8"/>
+                        <outlet property="searchResultsDelegate" destination="fEO-YB-Iu4" id="d9b-pu-RrT"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="961" y="757"/>
+        </scene>
     </scenes>
 </document>
