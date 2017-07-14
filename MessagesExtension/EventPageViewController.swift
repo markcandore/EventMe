@@ -15,14 +15,16 @@ class EventPageViewController: UIViewController {
     
     @IBOutlet weak var eventLocationLabel: UILabel!
     @IBOutlet weak var eventEmoji: UIImageView!
-    @IBOutlet weak var eventTimeLabel: UILabel!
     
+    @IBOutlet weak var eventTimeLabel: UILabel!
+    @IBOutlet weak var eventDateLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         eventNameLabel.text = event?.name
         eventLocationLabel.text = event?.location
         eventEmoji.image = event?.image
-        eventTimeLabel.text = (event?.date!)! + (event?.time!)!
+        eventTimeLabel.text = (event?.time!)!
+        eventDateLabel.text = (event?.date!)!
         // Do any additional setup after loading the view.
     }
 

@@ -123,7 +123,9 @@ class MessagesViewController: MSMessagesAppViewController {
         self.requestPresentationStyle(.compact)
     }
     override func didSelect(_ message: MSMessage, conversation: MSConversation) {
-        layoutEventPageController(message: message)
+        if let url = message.url {
+            layoutEventPageController(message: message)
+        }
     }
 
 //    override func viewDidAppear(_ animated: Bool) {
