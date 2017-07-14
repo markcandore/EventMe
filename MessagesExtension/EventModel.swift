@@ -9,12 +9,13 @@
 import Foundation
 import UIKit
 import Messages
+
 class Event {
-    var name : String
-    var date: String
-    var time: String
-    var location : String
-    var image: UIImage
+    var name : String?
+    var date: String?
+    var time: String?
+    var location : String?
+    var image: UIImage?
     
     init(name: String, date: String, time: String, location: String, emojiString: String) {
         self.name = name
@@ -25,13 +26,32 @@ class Event {
     }
     
     init(message: MSMessage){
+        
+    
+        
         if let url = message.url {
-            self.name = getQueryStringParameter(url: String(url), param: "name")
-            self.location = getQueryStringParameter(url: String(url), param: "location")
-            self.time = getQueryStringParameter(url: String(url), param: "time")
-            self.date = getQueryStringParameter(url: String(url), param: "date")
-            let emoji = getQueryStringParameter(url: String(url), param: "emoji")
-            self.image = emoji.image()
+            if let urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: true) {
+                if let queryItems = urlComponents.queryItems {
+                    var params = [String: String]()
+                    
+                    queryItems.forEach {
+                        params[$0.name] = $0.value
+                    }
+                    
+                    self.name = params["name"]
+                    self.location = params["location"]
+                    self.date = params["date"]
+                    self.time = params["time"]
+                    self.image = params["emoji"]?.image()
+                }
+            }
+//            url.encoded
+//            self.name = getQueryStringParameter(url: String(describing: url), param: "name")
+//            self.location = getQueryStringParameter(url: String(describing: url), param: "location")
+//            self.time = getQueryStringParameter(url: String(describing: url), param: "time")
+//            self.date = getQueryStringParameter(url: String(describing: url), param: "date")
+//            let emoji = getQueryStringParameter(url: String(describing: url), param: "emoji")
+//            self.image = emoji.image()
             
         }
     }

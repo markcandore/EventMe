@@ -46,8 +46,8 @@ class MessagesViewController: MSMessagesAppViewController {
     func layoutEventPageController(message: MSMessage){
         let storyboard = UIStoryboard(name: "MainInterface", bundle: .main)
         let eventPage = storyboard.instantiateViewController(withIdentifier: "eventPage") as? EventPageViewController
-//        eventPage?.event = Event(message: message)
-//        present(eventPage!, animated: false, completion: nil)
+        eventPage?.event = Event(message: message)
+        present(eventPage!, animated: false, completion: nil)
     }
     override func viewDidLayoutSubviews() {
         let scrollViewBound = ScrollView.bounds
@@ -82,7 +82,7 @@ class MessagesViewController: MSMessagesAppViewController {
         timeFormatter.dateFormat = "h:mm a"
         let time = timeFormatter.string(from: datePickerValue)
         
-        let event = Event(name: name, date: date, time: time, location: location, emojiString: emoji)
+        let event = Event(name: name!, date: date, time: time, location: location!, emojiString: emoji!)
         
         
         let layout = MSMessageTemplateLayout()
