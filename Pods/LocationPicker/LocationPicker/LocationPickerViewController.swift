@@ -145,8 +145,7 @@ open class LocationPickerViewController: UIViewController {
 		mapView.addGestureRecognizer(locationSelectGesture)
 
 		// search
-		searchBar.frame = CGRect(x: 50, y: 30, width: 10, height: 10)
-        mapView.addSubview(searchBar)
+		navigationItem.titleView = searchBar
 		definesPresentationContext = true
 		
 		// user location

@@ -55,6 +55,7 @@ class MessagesViewController: MSMessagesAppViewController {
         locationPicker.completion = {location in
             let adress = location?.address
             self.locationTextField.text = adress
+            self.locationTextField.becomeFirstResponder()
         }
         present(locationPicker, animated: true, completion: nil)
     }

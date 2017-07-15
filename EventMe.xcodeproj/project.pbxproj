@@ -17,6 +17,7 @@
 		5FC5846C1F143BA2003398E7 /* eventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC5846B1F143BA2003398E7 /* eventModel.swift */; };
 		5FC584721F14436B003398E7 /* party.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FC584711F14436B003398E7 /* party.jpg */; };
 		5FEE06191F19453400FFECE8 /* LocationPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEE06181F19453400FFECE8 /* LocationPicker.swift */; };
+		5FEE061B1F19829400FFECE8 /* mapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEE061A1F19829400FFECE8 /* mapView.swift */; };
 		B85D055829FBD534AAAC619E /* Pods_EventMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1086EFC76CB640D5A6CC24C7 /* Pods_EventMe.framework */; };
 		D818F5E61F169F6800375E1F /* EmojiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D818F5E51F169F6800375E1F /* EmojiTextField.swift */; };
 		D8652FB51F16EBB30090D9E6 /* EventPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8652FB41F16EBB30090D9E6 /* EventPageViewController.swift */; };
@@ -62,6 +63,7 @@
 		5FC5846B1F143BA2003398E7 /* eventModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eventModel.swift; sourceTree = "<group>"; };
 		5FC584711F14436B003398E7 /* party.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = party.jpg; path = Assets.xcassets/party.jpg; sourceTree = "<group>"; };
 		5FEE06181F19453400FFECE8 /* LocationPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPicker.swift; sourceTree = "<group>"; };
+		5FEE061A1F19829400FFECE8 /* mapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapView.swift; sourceTree = "<group>"; };
 		764572FDDF54E0A44A62C9D2 /* Pods_MessagesExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessagesExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB93D10584961B7EE072177 /* Pods-EventMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventMe/Pods-EventMe.release.xcconfig"; sourceTree = "<group>"; };
 		BDEC6F0B22F70A48FDE554CF /* Pods-EventMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventMe/Pods-EventMe.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				5F04818D1F141D3300E8B3E4 /* MessagesViewController.swift */,
 				D8652FB41F16EBB30090D9E6 /* EventPageViewController.swift */,
 				5FEE06181F19453400FFECE8 /* LocationPicker.swift */,
+				5FEE061A1F19829400FFECE8 /* mapView.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				5FC5846C1F143BA2003398E7 /* eventModel.swift in Sources */,
 				5F04818E1F141D3300E8B3E4 /* MessagesViewController.swift in Sources */,
 				D8652FB51F16EBB30090D9E6 /* EventPageViewController.swift in Sources */,
+				5FEE061B1F19829400FFECE8 /* mapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
