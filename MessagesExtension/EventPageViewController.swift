@@ -35,9 +35,6 @@ class EventPageViewController: UIViewController {
     
     @IBAction func didTapGoButton(_ sender: UIButton) {
 //        extensionContext!.open(NSURL(string: "http://maps.apple.com/?address=1600,PennsylvaniaAve.,20500") as! URL, completionHandler: nil)
-        let storyBoard = UIStoryboard(name: "MainInterface", bundle: .main)
-        let locationPicker = storyBoard.instantiateViewController(withIdentifier: "eventMapView") as!LocationViewController
-        present(locationPicker, animated: true, completion: nil)
     }
     /*
     // MARK: - Navigation

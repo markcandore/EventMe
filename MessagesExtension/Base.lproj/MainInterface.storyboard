@@ -360,29 +360,5 @@
             </objects>
             <point key="canvasLocation" x="-114.40000000000001" y="537.48125937031489"/>
         </scene>
-        <!--Location View Controller-->
-        <scene sceneID="0tl-bw-hnK">
-            <objects>
-                <viewController storyboardIdentifier="eventMapView" id="BCH-pj-Zbe" customClass="LocationViewController" customModule="MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="QCH-t0-BIu"/>
-                        <viewControllerLayoutGuide type="bottom" id="du4-BV-dZu"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="WKK-7z-nS3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="D0Q-ow-IEj">
-                                <rect key="frame" x="66" y="228" width="243" height="439"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mapView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4tN-Je-Tom" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="780" y="637.33133433283365"/>
-        </scene>
     </scenes>
 </document>
