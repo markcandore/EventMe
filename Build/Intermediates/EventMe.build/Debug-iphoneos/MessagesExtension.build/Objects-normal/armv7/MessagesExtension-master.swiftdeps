@@ -1,0 +1,10 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "e72b3de8d7cab3cbe4fcad2f690e1d2e"
+build_time: [553761561, 749980000]
+inputs:
+  "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/MessagesExtension/EmojiTextField.swift": [553218261, 0]
+  "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/MessagesExtension/LocationPicker.swift": [553672872, 0]
+  "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/MessagesExtension/eventModel.swift": [553305718, 0]
+  "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/MessagesExtension/MessagesViewController.swift": [553672872, 0]
+  "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/MessagesExtension/EventPageViewController.swift": [553548049, 0]
+  "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/MessagesExtension/mapView.swift": [553672872, 0]

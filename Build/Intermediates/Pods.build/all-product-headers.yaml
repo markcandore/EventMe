@@ -1,0 +1,92 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/Build/Products/Debug-iphonesimulator/LocationPicker/LocationPicker.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "LocationPicker-Swift.h",
+          'external-contents': "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/Build/Products/Debug-iphonesimulator/LocationPicker/LocationPicker.framework/Headers/LocationPicker-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "LocationPicker-umbrella.h",
+          'external-contents': "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/Pods/Target Support Files/LocationPicker/LocationPicker-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "LocationPicker.h",
+          'external-contents': "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/Pods/LocationPicker/LocationPicker/LocationPicker.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/Build/Products/Debug-iphonesimulator/LocationPicker/LocationPicker.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/Build/Intermediates/Pods.build/Debug-iphonesimulator/LocationPicker.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/Build/Products/Debug-iphonesimulator/Pods_EventMe.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-EventMe-umbrella.h",
+          'external-contents': "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/Pods/Target Support Files/Pods-EventMe/Pods-EventMe-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_EventMe-Swift.h",
+          'external-contents': "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/Build/Products/Debug-iphonesimulator/Pods_EventMe.framework/Headers/Pods_EventMe-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/Build/Products/Debug-iphonesimulator/Pods_EventMe.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-EventMe.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/Build/Products/Debug-iphonesimulator/Pods_MessagesExtension.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-MessagesExtension-umbrella.h",
+          'external-contents': "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/Pods/Target Support Files/Pods-MessagesExtension/Pods-MessagesExtension-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_MessagesExtension-Swift.h",
+          'external-contents': "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/Build/Products/Debug-iphonesimulator/Pods_MessagesExtension.framework/Headers/Pods_MessagesExtension-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/Build/Products/Debug-iphonesimulator/Pods_MessagesExtension.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-MessagesExtension.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

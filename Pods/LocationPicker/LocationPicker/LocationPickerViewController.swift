@@ -101,6 +101,8 @@ open class LocationPickerViewController: UIViewController {
 		let searchBar = self.searchController.searchBar
 		searchBar.searchBarStyle = self.searchBarStyle
 		searchBar.placeholder = self.searchBarPlaceholder
+        let searchBarWidth = self.view.bounds.width
+        searchBar.frame = CGRect(x: 0, y: 50, width: searchBarWidth, height: 100)
 		return searchBar
 	}()
 	
@@ -118,7 +120,7 @@ open class LocationPickerViewController: UIViewController {
 		view = mapView
 		
 		if showCurrentLocationButton {
-			let button = UIButton(frame: CGRect(x: 0, y: 0, width: 32, height: 32))
+			let button = UIButton(frame: CGRect(x: 0, y: 200, width: 32, height: 32))
 			button.backgroundColor = currentLocationButtonBackground
 			button.layer.masksToBounds = true
 			button.layer.cornerRadius = 16
@@ -145,8 +147,7 @@ open class LocationPickerViewController: UIViewController {
 		mapView.addGestureRecognizer(locationSelectGesture)
 
 		// search
-        searchBar.frame = CGRect(x: 50, y: 50, width: 10, height: 10)
-        mapView.addSubview(searchBar)
+        view.addSubview(searchBar)
         mapView.bringSubview(toFront: searchBar)
 //		navigationItem.titleView = searchBar
 		definesPresentationContext = true
@@ -287,7 +288,7 @@ extension LocationPickerViewController: UISearchResultsUpdating {
 		// dismiss search results
 		dismiss(animated: true) {
 			// set location, this also adds annotation
-			self.location = location
+            self.location = location
 			self.showCoordinates(location.coordinate)
 			
 			self.historyManager.addToHistory(location)

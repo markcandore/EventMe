@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/Build/Products/Debug-iphoneos/LocationPicker/LocationPicker.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/Build/Intermediates/Pods.build/Debug-iphoneos/LocationPicker.build/unextended-module.modulemap',
+    }]
+  }]
+}

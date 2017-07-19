@@ -17,7 +17,7 @@ class LocationSearchResultsViewController: UITableViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		extendedLayoutIncludesOpaqueBars = true
+//		extendedLayoutIncludesOpaqueBars = true
 	}
 	
 	override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {

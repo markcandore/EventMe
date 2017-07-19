@@ -1,0 +1,362 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "EventPageViewController"
+provides-nominal:
+- "C17MessagesExtension23EventPageViewController"
+provides-member:
+- ["C17MessagesExtension23EventPageViewController", ""]
+provides-dynamic-lookup:
+- "didReceiveMemoryWarning"
+- "didTapGoButton"
+- "eventDateLabel"
+- "eventEmoji"
+- "eventLocationLabel"
+- "eventNameLabel"
+- "eventTimeLabel"
+- "viewDidLoad"
+depends-top-level:
+- "AssignmentPrecedence"
+- "Event"
+- "EventPageViewController"
+- "UIButton"
+- "UIImageView"
+- "UILabel"
+- "UIViewController"
+depends-member:
+- !private ["Ps9AnyObject", "date"]
+- !private ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "event"]
+- !private ["Ps9AnyObject", "eventDateLabel"]
+- !private ["Ps9AnyObject", "eventEmoji"]
+- !private ["Ps9AnyObject", "eventLocationLabel"]
+- !private ["Ps9AnyObject", "eventNameLabel"]
+- !private ["Ps9AnyObject", "eventTimeLabel"]
+- !private ["Ps9AnyObject", "image"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "location"]
+- !private ["Ps9AnyObject", "name"]
+- !private ["Ps9AnyObject", "text"]
+- !private ["Ps9AnyObject", "time"]
+- !private ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["PSo15CALayerDelegate", "image"]
+- !private ["PSo15CALayerDelegate", "text"]
+- !private ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- !private ["Ps7CVarArg", "event"]
+- !private ["Ps7CVarArg", "eventDateLabel"]
+- !private ["Ps7CVarArg", "eventEmoji"]
+- !private ["Ps7CVarArg", "eventLocationLabel"]
+- !private ["Ps7CVarArg", "eventNameLabel"]
+- !private ["Ps7CVarArg", "eventTimeLabel"]
+- !private ["Ps7CVarArg", "image"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "text"]
+- !private ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "event"]
+- !private ["Ps28CustomDebugStringConvertible", "eventDateLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "eventEmoji"]
+- !private ["Ps28CustomDebugStringConvertible", "eventLocationLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "eventNameLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "eventTimeLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "image"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "event"]
+- !private ["Ps23CustomStringConvertible", "eventDateLabel"]
+- !private ["Ps23CustomStringConvertible", "eventEmoji"]
+- !private ["Ps23CustomStringConvertible", "eventLocationLabel"]
+- !private ["Ps23CustomStringConvertible", "eventNameLabel"]
+- !private ["Ps23CustomStringConvertible", "eventTimeLabel"]
+- !private ["Ps23CustomStringConvertible", "image"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "event"]
+- !private ["Ps9Equatable", "eventDateLabel"]
+- !private ["Ps9Equatable", "eventEmoji"]
+- !private ["Ps9Equatable", "eventLocationLabel"]
+- !private ["Ps9Equatable", "eventNameLabel"]
+- !private ["Ps9Equatable", "eventTimeLabel"]
+- !private ["Ps9Equatable", "image"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["C17MessagesExtension5Event", "date"]
+- !private ["C17MessagesExtension5Event", "image"]
+- !private ["C17MessagesExtension5Event", "location"]
+- !private ["C17MessagesExtension5Event", "name"]
+- !private ["C17MessagesExtension5Event", "time"]
+- ["C17MessagesExtension23EventPageViewController", "Event"]
+- ["C17MessagesExtension23EventPageViewController", "UIButton"]
+- ["C17MessagesExtension23EventPageViewController", "UIImageView"]
+- ["C17MessagesExtension23EventPageViewController", "UILabel"]
+- ["C17MessagesExtension23EventPageViewController", "deinit"]
+- ["C17MessagesExtension23EventPageViewController", "didReceiveMemoryWarning"]
+- ["C17MessagesExtension23EventPageViewController", "didTapGoButton"]
+- ["C17MessagesExtension23EventPageViewController", "event"]
+- ["C17MessagesExtension23EventPageViewController", "eventDateLabel"]
+- ["C17MessagesExtension23EventPageViewController", "eventEmoji"]
+- ["C17MessagesExtension23EventPageViewController", "eventLocationLabel"]
+- ["C17MessagesExtension23EventPageViewController", "eventNameLabel"]
+- ["C17MessagesExtension23EventPageViewController", "eventTimeLabel"]
+- ["C17MessagesExtension23EventPageViewController", "init"]
+- ["C17MessagesExtension23EventPageViewController", "viewDidLoad"]
+- !private ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "event"]
+- !private ["Ps8Hashable", "eventDateLabel"]
+- !private ["Ps8Hashable", "eventEmoji"]
+- !private ["Ps8Hashable", "eventLocationLabel"]
+- !private ["Ps8Hashable", "eventNameLabel"]
+- !private ["Ps8Hashable", "eventTimeLabel"]
+- !private ["Ps8Hashable", "image"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "text"]
+- !private ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- !private ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "event"]
+- !private ["PSo8NSCoding", "eventDateLabel"]
+- !private ["PSo8NSCoding", "eventEmoji"]
+- !private ["PSo8NSCoding", "eventLocationLabel"]
+- !private ["PSo8NSCoding", "eventNameLabel"]
+- !private ["PSo8NSCoding", "eventTimeLabel"]
+- !private ["PSo8NSCoding", "image"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "event"]
+- !private ["PSo26NSExtensionRequestHandling", "eventDateLabel"]
+- !private ["PSo26NSExtensionRequestHandling", "eventEmoji"]
+- !private ["PSo26NSExtensionRequestHandling", "eventLocationLabel"]
+- !private ["PSo26NSExtensionRequestHandling", "eventNameLabel"]
+- !private ["PSo26NSExtensionRequestHandling", "eventTimeLabel"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "Event"]
+- ["CSo8NSObject", "UIButton"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "didTapGoButton"]
+- ["CSo8NSObject", "event"]
+- ["CSo8NSObject", "eventDateLabel"]
+- ["CSo8NSObject", "eventEmoji"]
+- ["CSo8NSObject", "eventLocationLabel"]
+- ["CSo8NSObject", "eventNameLabel"]
+- ["CSo8NSObject", "eventTimeLabel"]
+- !private ["CSo8NSObject", "image"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "event"]
+- !private ["PSo16NSObjectProtocol", "eventDateLabel"]
+- !private ["PSo16NSObjectProtocol", "eventEmoji"]
+- !private ["PSo16NSObjectProtocol", "eventLocationLabel"]
+- !private ["PSo16NSObjectProtocol", "eventNameLabel"]
+- !private ["PSo16NSObjectProtocol", "eventTimeLabel"]
+- !private ["PSo16NSObjectProtocol", "image"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo29UIAccessibilityIdentification", "image"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "image"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "event"]
+- !private ["PSo21UIAppearanceContainer", "eventDateLabel"]
+- !private ["PSo21UIAppearanceContainer", "eventEmoji"]
+- !private ["PSo21UIAppearanceContainer", "eventLocationLabel"]
+- !private ["PSo21UIAppearanceContainer", "eventNameLabel"]
+- !private ["PSo21UIAppearanceContainer", "eventTimeLabel"]
+- !private ["PSo21UIAppearanceContainer", "image"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "event"]
+- !private ["PSo18UIContentContainer", "eventDateLabel"]
+- !private ["PSo18UIContentContainer", "eventEmoji"]
+- !private ["PSo18UIContentContainer", "eventLocationLabel"]
+- !private ["PSo18UIContentContainer", "eventNameLabel"]
+- !private ["PSo18UIContentContainer", "eventTimeLabel"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["PSo17UICoordinateSpace", "image"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "image"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "event"]
+- !private ["PSo18UIFocusEnvironment", "eventDateLabel"]
+- !private ["PSo18UIFocusEnvironment", "eventEmoji"]
+- !private ["PSo18UIFocusEnvironment", "eventLocationLabel"]
+- !private ["PSo18UIFocusEnvironment", "eventNameLabel"]
+- !private ["PSo18UIFocusEnvironment", "eventTimeLabel"]
+- !private ["PSo18UIFocusEnvironment", "image"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "image"]
+- !private ["PSo11UIFocusItem", "text"]
+- !private ["CSo11UIImageView", "image"]
+- !private ["CSo7UILabel", "text"]
+- ["CSo11UIResponder", "Event"]
+- ["CSo11UIResponder", "UIButton"]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "didTapGoButton"]
+- ["CSo11UIResponder", "event"]
+- ["CSo11UIResponder", "eventDateLabel"]
+- ["CSo11UIResponder", "eventEmoji"]
+- ["CSo11UIResponder", "eventLocationLabel"]
+- ["CSo11UIResponder", "eventNameLabel"]
+- ["CSo11UIResponder", "eventTimeLabel"]
+- !private ["CSo11UIResponder", "image"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- !private ["PSo30UIResponderStandardEditActions", "event"]
+- !private ["PSo30UIResponderStandardEditActions", "eventDateLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "eventEmoji"]
+- !private ["PSo30UIResponderStandardEditActions", "eventLocationLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "eventNameLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "eventTimeLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "image"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "text"]
+- !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "event"]
+- !private ["PSo16UIStateRestoring", "eventDateLabel"]
+- !private ["PSo16UIStateRestoring", "eventEmoji"]
+- !private ["PSo16UIStateRestoring", "eventLocationLabel"]
+- !private ["PSo16UIStateRestoring", "eventNameLabel"]
+- !private ["PSo16UIStateRestoring", "eventTimeLabel"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "event"]
+- !private ["PSo18UITraitEnvironment", "eventDateLabel"]
+- !private ["PSo18UITraitEnvironment", "eventEmoji"]
+- !private ["PSo18UITraitEnvironment", "eventLocationLabel"]
+- !private ["PSo18UITraitEnvironment", "eventNameLabel"]
+- !private ["PSo18UITraitEnvironment", "eventTimeLabel"]
+- !private ["PSo18UITraitEnvironment", "image"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "image"]
+- !private ["CSo6UIView", "text"]
+- ["CSo16UIViewController", "Event"]
+- ["CSo16UIViewController", "UIButton"]
+- ["CSo16UIViewController", "UIImageView"]
+- ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "didTapGoButton"]
+- ["CSo16UIViewController", "event"]
+- ["CSo16UIViewController", "eventDateLabel"]
+- ["CSo16UIViewController", "eventEmoji"]
+- ["CSo16UIViewController", "eventLocationLabel"]
+- ["CSo16UIViewController", "eventNameLabel"]
+- ["CSo16UIViewController", "eventTimeLabel"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "image"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
+- !private ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps9_Hashable", "event"]
+- !private ["Ps9_Hashable", "eventDateLabel"]
+- !private ["Ps9_Hashable", "eventEmoji"]
+- !private ["Ps9_Hashable", "eventLocationLabel"]
+- !private ["Ps9_Hashable", "eventNameLabel"]
+- !private ["Ps9_Hashable", "eventTimeLabel"]
+- !private ["Ps9_Hashable", "image"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "text"]
+- !private ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "C17MessagesExtension5Event"
+- "C17MessagesExtension23EventPageViewController"
+- "Ps8Hashable"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "PSo30UIContentSizeCategoryAdjusting"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "CSo11UIImageView"
+- !private "CSo7UILabel"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
+- "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/Build/Products/Debug-iphonesimulator/LocationPicker/LocationPicker.framework/Modules/LocationPicker.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/Build/Products/Debug-iphonesimulator/LocationPicker/LocationPicker.framework/Headers/LocationPicker-umbrella.h"
+- "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/Build/Products/Debug-iphonesimulator/LocationPicker/LocationPicker.framework/Headers/LocationPicker.h"
+- "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/Build/Products/Debug-iphonesimulator/LocationPicker/LocationPicker.framework/Headers/LocationPicker-Swift.h"
+- "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/Build/Products/Debug-iphonesimulator/LocationPicker/LocationPicker.framework/Modules/module.modulemap"
+interface-hash: "31969132d84e86896878927939658310"

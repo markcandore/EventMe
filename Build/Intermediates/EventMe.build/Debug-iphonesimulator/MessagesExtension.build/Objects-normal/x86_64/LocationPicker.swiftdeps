@@ -1,0 +1,439 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "LocationViewController"
+provides-nominal:
+- "C17MessagesExtension22LocationViewController"
+provides-member:
+- ["C17MessagesExtension22LocationViewController", ""]
+provides-dynamic-lookup:
+- "buttonTapped"
+- "viewDidLoad"
+depends-top-level:
+- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- "LocationPickerViewController"
+- "LocationViewController"
+- !private "StringLiteralType"
+depends-member:
+- !private ["Ps9AnyObject", "blue"]
+- !private ["Ps9AnyObject", "currentLocationButtonBackground"]
+- !private ["Ps9AnyObject", "dismiss"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "mapType"]
+- !private ["Ps9AnyObject", "searchBarPlaceholder"]
+- !private ["Ps9AnyObject", "searchHistoryLabel"]
+- !private ["Ps9AnyObject", "showCurrentLocationButton"]
+- !private ["Ps9AnyObject", "showCurrentLocationInitially"]
+- !private ["Ps9AnyObject", "useCurrentLocationAsHint"]
+- !private ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["PSo25CLLocationManagerDelegate", "currentLocationButtonBackground"]
+- !private ["PSo25CLLocationManagerDelegate", "dismiss"]
+- !private ["PSo25CLLocationManagerDelegate", "init"]
+- !private ["PSo25CLLocationManagerDelegate", "mapType"]
+- !private ["PSo25CLLocationManagerDelegate", "searchBarPlaceholder"]
+- !private ["PSo25CLLocationManagerDelegate", "searchHistoryLabel"]
+- !private ["PSo25CLLocationManagerDelegate", "showCurrentLocationButton"]
+- !private ["PSo25CLLocationManagerDelegate", "showCurrentLocationInitially"]
+- !private ["PSo25CLLocationManagerDelegate", "useCurrentLocationAsHint"]
+- !private ["PSo25CLLocationManagerDelegate", "viewDidLoad"]
+- ["PSo25CLLocationManagerDelegate", ""]
+- !private ["Ps7CVarArg", "blue"]
+- !private ["Ps7CVarArg", "currentLocationButtonBackground"]
+- !private ["Ps7CVarArg", "dismiss"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "mapType"]
+- !private ["Ps7CVarArg", "searchBarPlaceholder"]
+- !private ["Ps7CVarArg", "searchHistoryLabel"]
+- !private ["Ps7CVarArg", "showCurrentLocationButton"]
+- !private ["Ps7CVarArg", "showCurrentLocationInitially"]
+- !private ["Ps7CVarArg", "useCurrentLocationAsHint"]
+- !private ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "blue"]
+- !private ["Ps28CustomDebugStringConvertible", "currentLocationButtonBackground"]
+- !private ["Ps28CustomDebugStringConvertible", "dismiss"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "mapType"]
+- !private ["Ps28CustomDebugStringConvertible", "searchBarPlaceholder"]
+- !private ["Ps28CustomDebugStringConvertible", "searchHistoryLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "showCurrentLocationButton"]
+- !private ["Ps28CustomDebugStringConvertible", "showCurrentLocationInitially"]
+- !private ["Ps28CustomDebugStringConvertible", "useCurrentLocationAsHint"]
+- !private ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "blue"]
+- !private ["Ps23CustomStringConvertible", "currentLocationButtonBackground"]
+- !private ["Ps23CustomStringConvertible", "dismiss"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "mapType"]
+- !private ["Ps23CustomStringConvertible", "searchBarPlaceholder"]
+- !private ["Ps23CustomStringConvertible", "searchHistoryLabel"]
+- !private ["Ps23CustomStringConvertible", "showCurrentLocationButton"]
+- !private ["Ps23CustomStringConvertible", "showCurrentLocationInitially"]
+- !private ["Ps23CustomStringConvertible", "useCurrentLocationAsHint"]
+- !private ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "blue"]
+- !private ["Ps9Equatable", "currentLocationButtonBackground"]
+- !private ["Ps9Equatable", "dismiss"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "mapType"]
+- !private ["Ps9Equatable", "searchBarPlaceholder"]
+- !private ["Ps9Equatable", "searchHistoryLabel"]
+- !private ["Ps9Equatable", "showCurrentLocationButton"]
+- !private ["Ps9Equatable", "showCurrentLocationInitially"]
+- !private ["Ps9Equatable", "standard"]
+- !private ["Ps9Equatable", "useCurrentLocationAsHint"]
+- !private ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "blue"]
+- !private ["Ps8Hashable", "currentLocationButtonBackground"]
+- !private ["Ps8Hashable", "dismiss"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "mapType"]
+- !private ["Ps8Hashable", "searchBarPlaceholder"]
+- !private ["Ps8Hashable", "searchHistoryLabel"]
+- !private ["Ps8Hashable", "showCurrentLocationButton"]
+- !private ["Ps8Hashable", "showCurrentLocationInitially"]
+- !private ["Ps8Hashable", "standard"]
+- !private ["Ps8Hashable", "useCurrentLocationAsHint"]
+- !private ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- ["C14LocationPicker28LocationPickerViewController", "buttonTapped"]
+- !private ["C14LocationPicker28LocationPickerViewController", "currentLocationButtonBackground"]
+- !private ["C14LocationPicker28LocationPickerViewController", "dismiss"]
+- ["C14LocationPicker28LocationPickerViewController", "init"]
+- !private ["C14LocationPicker28LocationPickerViewController", "mapType"]
+- !private ["C14LocationPicker28LocationPickerViewController", "searchBarPlaceholder"]
+- !private ["C14LocationPicker28LocationPickerViewController", "searchHistoryLabel"]
+- !private ["C14LocationPicker28LocationPickerViewController", "showCurrentLocationButton"]
+- !private ["C14LocationPicker28LocationPickerViewController", "showCurrentLocationInitially"]
+- !private ["C14LocationPicker28LocationPickerViewController", "useCurrentLocationAsHint"]
+- ["C14LocationPicker28LocationPickerViewController", "viewDidLoad"]
+- ["C14LocationPicker28LocationPickerViewController", ""]
+- ["C17MessagesExtension22LocationViewController", "buttonTapped"]
+- !private ["C17MessagesExtension22LocationViewController", "currentLocationButtonBackground"]
+- ["C17MessagesExtension22LocationViewController", "deinit"]
+- !private ["C17MessagesExtension22LocationViewController", "dismiss"]
+- ["C17MessagesExtension22LocationViewController", "init"]
+- !private ["C17MessagesExtension22LocationViewController", "mapType"]
+- !private ["C17MessagesExtension22LocationViewController", "searchBarPlaceholder"]
+- !private ["C17MessagesExtension22LocationViewController", "searchHistoryLabel"]
+- !private ["C17MessagesExtension22LocationViewController", "showCurrentLocationButton"]
+- !private ["C17MessagesExtension22LocationViewController", "showCurrentLocationInitially"]
+- !private ["C17MessagesExtension22LocationViewController", "useCurrentLocationAsHint"]
+- ["C17MessagesExtension22LocationViewController", "viewDidLoad"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["OSC9MKMapType", "standard"]
+- !private ["PSo17MKMapViewDelegate", "currentLocationButtonBackground"]
+- !private ["PSo17MKMapViewDelegate", "dismiss"]
+- !private ["PSo17MKMapViewDelegate", "init"]
+- !private ["PSo17MKMapViewDelegate", "mapType"]
+- !private ["PSo17MKMapViewDelegate", "searchBarPlaceholder"]
+- !private ["PSo17MKMapViewDelegate", "searchHistoryLabel"]
+- !private ["PSo17MKMapViewDelegate", "showCurrentLocationButton"]
+- !private ["PSo17MKMapViewDelegate", "showCurrentLocationInitially"]
+- !private ["PSo17MKMapViewDelegate", "useCurrentLocationAsHint"]
+- !private ["PSo17MKMapViewDelegate", "viewDidLoad"]
+- ["PSo17MKMapViewDelegate", ""]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["PSo8NSCoding", "blue"]
+- !private ["PSo8NSCoding", "currentLocationButtonBackground"]
+- !private ["PSo8NSCoding", "dismiss"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "mapType"]
+- !private ["PSo8NSCoding", "searchBarPlaceholder"]
+- !private ["PSo8NSCoding", "searchHistoryLabel"]
+- !private ["PSo8NSCoding", "showCurrentLocationButton"]
+- !private ["PSo8NSCoding", "showCurrentLocationInitially"]
+- !private ["PSo8NSCoding", "useCurrentLocationAsHint"]
+- !private ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "blue"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "currentLocationButtonBackground"]
+- !private ["PSo26NSExtensionRequestHandling", "dismiss"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "mapType"]
+- !private ["PSo26NSExtensionRequestHandling", "searchBarPlaceholder"]
+- !private ["PSo26NSExtensionRequestHandling", "searchHistoryLabel"]
+- !private ["PSo26NSExtensionRequestHandling", "showCurrentLocationButton"]
+- !private ["PSo26NSExtensionRequestHandling", "showCurrentLocationInitially"]
+- !private ["PSo26NSExtensionRequestHandling", "useCurrentLocationAsHint"]
+- !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "blue"]
+- ["CSo8NSObject", "buttonTapped"]
+- !private ["CSo8NSObject", "currentLocationButtonBackground"]
+- !private ["CSo8NSObject", "dismiss"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "mapType"]
+- !private ["CSo8NSObject", "searchBarPlaceholder"]
+- !private ["CSo8NSObject", "searchHistoryLabel"]
+- !private ["CSo8NSObject", "showCurrentLocationButton"]
+- !private ["CSo8NSObject", "showCurrentLocationInitially"]
+- !private ["CSo8NSObject", "useCurrentLocationAsHint"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "blue"]
+- !private ["PSo16NSObjectProtocol", "currentLocationButtonBackground"]
+- !private ["PSo16NSObjectProtocol", "dismiss"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "mapType"]
+- !private ["PSo16NSObjectProtocol", "searchBarPlaceholder"]
+- !private ["PSo16NSObjectProtocol", "searchHistoryLabel"]
+- !private ["PSo16NSObjectProtocol", "showCurrentLocationButton"]
+- !private ["PSo16NSObjectProtocol", "showCurrentLocationInitially"]
+- !private ["PSo16NSObjectProtocol", "useCurrentLocationAsHint"]
+- !private ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "blue"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- !private ["Ps16RawRepresentable", "standard"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo21UIAppearanceContainer", "currentLocationButtonBackground"]
+- !private ["PSo21UIAppearanceContainer", "dismiss"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "mapType"]
+- !private ["PSo21UIAppearanceContainer", "searchBarPlaceholder"]
+- !private ["PSo21UIAppearanceContainer", "searchHistoryLabel"]
+- !private ["PSo21UIAppearanceContainer", "showCurrentLocationButton"]
+- !private ["PSo21UIAppearanceContainer", "showCurrentLocationInitially"]
+- !private ["PSo21UIAppearanceContainer", "useCurrentLocationAsHint"]
+- !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo24UIBarPositioningDelegate", "currentLocationButtonBackground"]
+- !private ["PSo24UIBarPositioningDelegate", "dismiss"]
+- !private ["PSo24UIBarPositioningDelegate", "init"]
+- !private ["PSo24UIBarPositioningDelegate", "mapType"]
+- !private ["PSo24UIBarPositioningDelegate", "searchBarPlaceholder"]
+- !private ["PSo24UIBarPositioningDelegate", "searchHistoryLabel"]
+- !private ["PSo24UIBarPositioningDelegate", "showCurrentLocationButton"]
+- !private ["PSo24UIBarPositioningDelegate", "showCurrentLocationInitially"]
+- !private ["PSo24UIBarPositioningDelegate", "useCurrentLocationAsHint"]
+- !private ["PSo24UIBarPositioningDelegate", "viewDidLoad"]
+- ["PSo24UIBarPositioningDelegate", ""]
+- !private ["CSo7UIColor", "blue"]
+- !private ["PSo18UIContentContainer", "currentLocationButtonBackground"]
+- !private ["PSo18UIContentContainer", "dismiss"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "mapType"]
+- !private ["PSo18UIContentContainer", "searchBarPlaceholder"]
+- !private ["PSo18UIContentContainer", "searchHistoryLabel"]
+- !private ["PSo18UIContentContainer", "showCurrentLocationButton"]
+- !private ["PSo18UIContentContainer", "showCurrentLocationInitially"]
+- !private ["PSo18UIContentContainer", "useCurrentLocationAsHint"]
+- !private ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo18UIFocusEnvironment", "currentLocationButtonBackground"]
+- !private ["PSo18UIFocusEnvironment", "dismiss"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "mapType"]
+- !private ["PSo18UIFocusEnvironment", "searchBarPlaceholder"]
+- !private ["PSo18UIFocusEnvironment", "searchHistoryLabel"]
+- !private ["PSo18UIFocusEnvironment", "showCurrentLocationButton"]
+- !private ["PSo18UIFocusEnvironment", "showCurrentLocationInitially"]
+- !private ["PSo18UIFocusEnvironment", "useCurrentLocationAsHint"]
+- !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo27UIGestureRecognizerDelegate", "currentLocationButtonBackground"]
+- !private ["PSo27UIGestureRecognizerDelegate", "dismiss"]
+- !private ["PSo27UIGestureRecognizerDelegate", "init"]
+- !private ["PSo27UIGestureRecognizerDelegate", "mapType"]
+- !private ["PSo27UIGestureRecognizerDelegate", "searchBarPlaceholder"]
+- !private ["PSo27UIGestureRecognizerDelegate", "searchHistoryLabel"]
+- !private ["PSo27UIGestureRecognizerDelegate", "showCurrentLocationButton"]
+- !private ["PSo27UIGestureRecognizerDelegate", "showCurrentLocationInitially"]
+- !private ["PSo27UIGestureRecognizerDelegate", "useCurrentLocationAsHint"]
+- !private ["PSo27UIGestureRecognizerDelegate", "viewDidLoad"]
+- ["PSo27UIGestureRecognizerDelegate", ""]
+- ["CSo11UIResponder", "buttonTapped"]
+- !private ["CSo11UIResponder", "currentLocationButtonBackground"]
+- !private ["CSo11UIResponder", "dismiss"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "mapType"]
+- !private ["CSo11UIResponder", "searchBarPlaceholder"]
+- !private ["CSo11UIResponder", "searchHistoryLabel"]
+- !private ["CSo11UIResponder", "showCurrentLocationButton"]
+- !private ["CSo11UIResponder", "showCurrentLocationInitially"]
+- !private ["CSo11UIResponder", "useCurrentLocationAsHint"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "currentLocationButtonBackground"]
+- !private ["PSo30UIResponderStandardEditActions", "dismiss"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "mapType"]
+- !private ["PSo30UIResponderStandardEditActions", "searchBarPlaceholder"]
+- !private ["PSo30UIResponderStandardEditActions", "searchHistoryLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "showCurrentLocationButton"]
+- !private ["PSo30UIResponderStandardEditActions", "showCurrentLocationInitially"]
+- !private ["PSo30UIResponderStandardEditActions", "useCurrentLocationAsHint"]
+- !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo19UISearchBarDelegate", "currentLocationButtonBackground"]
+- !private ["PSo19UISearchBarDelegate", "dismiss"]
+- !private ["PSo19UISearchBarDelegate", "init"]
+- !private ["PSo19UISearchBarDelegate", "mapType"]
+- !private ["PSo19UISearchBarDelegate", "searchBarPlaceholder"]
+- !private ["PSo19UISearchBarDelegate", "searchHistoryLabel"]
+- !private ["PSo19UISearchBarDelegate", "showCurrentLocationButton"]
+- !private ["PSo19UISearchBarDelegate", "showCurrentLocationInitially"]
+- !private ["PSo19UISearchBarDelegate", "useCurrentLocationAsHint"]
+- !private ["PSo19UISearchBarDelegate", "viewDidLoad"]
+- ["PSo19UISearchBarDelegate", ""]
+- !private ["PSo23UISearchResultsUpdating", "currentLocationButtonBackground"]
+- !private ["PSo23UISearchResultsUpdating", "dismiss"]
+- !private ["PSo23UISearchResultsUpdating", "init"]
+- !private ["PSo23UISearchResultsUpdating", "mapType"]
+- !private ["PSo23UISearchResultsUpdating", "searchBarPlaceholder"]
+- !private ["PSo23UISearchResultsUpdating", "searchHistoryLabel"]
+- !private ["PSo23UISearchResultsUpdating", "showCurrentLocationButton"]
+- !private ["PSo23UISearchResultsUpdating", "showCurrentLocationInitially"]
+- !private ["PSo23UISearchResultsUpdating", "useCurrentLocationAsHint"]
+- !private ["PSo23UISearchResultsUpdating", "viewDidLoad"]
+- ["PSo23UISearchResultsUpdating", ""]
+- !private ["PSo16UIStateRestoring", "currentLocationButtonBackground"]
+- !private ["PSo16UIStateRestoring", "dismiss"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "mapType"]
+- !private ["PSo16UIStateRestoring", "searchBarPlaceholder"]
+- !private ["PSo16UIStateRestoring", "searchHistoryLabel"]
+- !private ["PSo16UIStateRestoring", "showCurrentLocationButton"]
+- !private ["PSo16UIStateRestoring", "showCurrentLocationInitially"]
+- !private ["PSo16UIStateRestoring", "useCurrentLocationAsHint"]
+- !private ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "currentLocationButtonBackground"]
+- !private ["PSo18UITraitEnvironment", "dismiss"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "mapType"]
+- !private ["PSo18UITraitEnvironment", "searchBarPlaceholder"]
+- !private ["PSo18UITraitEnvironment", "searchHistoryLabel"]
+- !private ["PSo18UITraitEnvironment", "showCurrentLocationButton"]
+- !private ["PSo18UITraitEnvironment", "showCurrentLocationInitially"]
+- !private ["PSo18UITraitEnvironment", "useCurrentLocationAsHint"]
+- !private ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo16UIViewController", "buttonTapped"]
+- !private ["CSo16UIViewController", "currentLocationButtonBackground"]
+- !private ["CSo16UIViewController", "dismiss"]
+- ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "mapType"]
+- !private ["CSo16UIViewController", "searchBarPlaceholder"]
+- !private ["CSo16UIViewController", "searchHistoryLabel"]
+- !private ["CSo16UIViewController", "showCurrentLocationButton"]
+- !private ["CSo16UIViewController", "showCurrentLocationInitially"]
+- !private ["CSo16UIViewController", "useCurrentLocationAsHint"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps26_ExpressibleByColorLiteral", "blue"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "blue"]
+- !private ["Ps9_Hashable", "currentLocationButtonBackground"]
+- !private ["Ps9_Hashable", "dismiss"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "mapType"]
+- !private ["Ps9_Hashable", "searchBarPlaceholder"]
+- !private ["Ps9_Hashable", "searchHistoryLabel"]
+- !private ["Ps9_Hashable", "showCurrentLocationButton"]
+- !private ["Ps9_Hashable", "showCurrentLocationInitially"]
+- !private ["Ps9_Hashable", "standard"]
+- !private ["Ps9_Hashable", "useCurrentLocationAsHint"]
+- !private ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- "PSo25CLLocationManagerDelegate"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- "C14LocationPicker28LocationPickerViewController"
+- "C17MessagesExtension22LocationViewController"
+- !private "Ps25LosslessStringConvertible"
+- !private "OSC9MKMapType"
+- "PSo17MKMapViewDelegate"
+- !private "Ps10MirrorPath"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Ps16RawRepresentable"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- "PSo21UIAppearanceContainer"
+- "PSo24UIBarPositioningDelegate"
+- !private "CSo7UIColor"
+- "PSo18UIContentContainer"
+- "PSo18UIFocusEnvironment"
+- "PSo27UIGestureRecognizerDelegate"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo19UISearchBarDelegate"
+- "PSo23UISearchResultsUpdating"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- "CSo16UIViewController"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps26_ExpressibleByColorLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
+- "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/Build/Products/Debug-iphonesimulator/LocationPicker/LocationPicker.framework/Modules/LocationPicker.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/Build/Products/Debug-iphonesimulator/LocationPicker/LocationPicker.framework/Headers/LocationPicker-umbrella.h"
+- "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/Build/Products/Debug-iphonesimulator/LocationPicker/LocationPicker.framework/Headers/LocationPicker.h"
+- "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/Build/Products/Debug-iphonesimulator/LocationPicker/LocationPicker.framework/Headers/LocationPicker-Swift.h"
+- "/Users/Nathan/Desktop/Make School Academy Sumer 2017 Work/EventMe-master/Build/Products/Debug-iphonesimulator/LocationPicker/LocationPicker.framework/Modules/module.modulemap"
+interface-hash: "d93f0e7c8098d64fc3c26cafab71fbcf"
